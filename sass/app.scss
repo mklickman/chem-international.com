@@ -1,0 +1,15 @@
+$small-screen: 720px;
+
+// Foundation
+@import "foundation";
+
+// Custom
+@import "compass/reset";
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  text-align: right;
+}
