@@ -83,19 +83,15 @@ nav {
 }
 
 img.map {
-  max-width: 487px;
   left: 5%;
   position: absolute;
   top: 0;
-  width: 100%;
 }
 
 img.beaker {
   bottom: 0;
-  max-width: 318px;
   left: 0;
   position: absolute;
-  width: 100%;
 }
 
 .welcome {
@@ -208,7 +204,8 @@ img.beaker {
 .blurb-icon {
   float: left;
   margin-right: 7.5%;
-  width: 30%;
+  width: auto;
+  height: auto;
   max-width: 67px;
 }
 
@@ -539,6 +536,16 @@ form {
       background: $color-form-field-active-bg;
       color: darken($color-blue, 10);
     }
+
+    html.lt-ie9 & {
+      border-top: 2px solid $color-form-field-inactive-shadow;
+      border-left: 2px solid $color-form-field-inactive-shadow;
+
+      &:focus {
+        border-top: 2px solid $color-form-field-active-shadow;
+        border-left: 2px solid $color-form-field-active-shadow; 
+      }
+    }
   }
 
   .textarea {
@@ -614,6 +621,10 @@ form {
   &.email {
     vertical-align: top;
   }
+
+  html.lt-ie9 & {
+    margin-bottom: 0;
+  }
 }
 
 .contact-method-icon {
@@ -634,6 +645,19 @@ form {
 
   .email & {
     padding-top: 0.45em;
+  }
+
+  html.lt-ie9 & {
+    margin-top: 1.5em;
+  }
+
+  html.lt-ie9 .email & {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  html.lt-ie9 .mail & {
+    margin-bottom: 0.75em;
   }
 }
 

@@ -8,6 +8,12 @@
     ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
     '.js><\/script>')
   </script>
+  
+  <!-- Media query support for IE 6-8 -->
+  <!--[if lt IE 9]>
+    <script src="js/vendor/respond.min.js"></script>
+  <![endif]-->
+
   <script src="js/vendor/retina.js"></script>
   <script src="js/temp.js"></script>
 
