@@ -32,8 +32,8 @@
     </nav>
 
     <select name="mobile-nav" class="mobile-nav show-for-small">
-      <option value="/" default>Home</option>
-      <option value="products">Products</option>
+      <option value="/"<?php if ($interior == false) {echo ' selected';} ?>>Home</option>
+      <option value="products"<?php if ($interior == true) {echo ' selected';} ?>>Products</option>
       <option value="about">About</option>
       <option value="contact">Contact</option>
       <option value="sign-in">Sign In</option>

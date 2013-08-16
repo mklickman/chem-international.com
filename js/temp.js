@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
   $('.mobile-nav').change(function() {
-    console.log('changed');
-    window.location = 'interior.php';
+    if ($(this).val() == "/") {
+      window.location = 'index.php';
+    } else {
+      window.location = 'interior.php';
+    }
+    
   });
 });
